@@ -1,0 +1,146 @@
+<% include partials/header %>
+
+<div class="all-input-container">
+
+<form class="form" id="form">
+    <div class="form__container">
+         <!-- ===========FORM SECTION 1=========== -->
+        <div class="form__section--1">
+            <!-- -----------DATTUM OD DO------------- -->
+            <input type="date" name="datumod" id="datumod" class="form__section--1__input input__1--1" required>
+            <input type="date" name="datumdo" id="datumdo" class="form__section--1__input input__1--2" required>
+        </div>
+
+        <!-- ===========FORM SECTION 2=========== -->
+        <div class="form__section--2">
+
+             <!-- -----------VRSTA PARTNERA------------- -->
+            <div class="form__section--2-1">
+                <input type="radio" name="vrstapartnera" value="0" id="vrstapartnera-0" class="form__section--2__input input__2-1--1" checked required>
+                <label for="vrstapartnera-0" class="form__section--2__label label__2-1--1">Domaci</label>
+
+                <input type="radio" name="vrstapartnera" value="1" id="vrstapartnera-1" class="form__section--2__input input__2-1--2" required>
+                <label for="vrstapartnera-1" class="form__section--2__label label__2-1--2">Strani</label>
+
+                <input type="radio" name="vrstapartnera" value="2" id="vrstapartnera-2" class="form__section--2__input input__2-1--3" required>
+                <label for="vrstapartnera-2" class="form__section--2__label label__2-1--3">Svi</label>
+            </div>
+
+            <!-- -----------VRSTA PROIZVODA------------- -->
+            <div class="form__section--2-2">
+                <input type="radio" name="vrstaproizvoda" value="0" id="vrstaproizvoda-0" class="form__section--2__input input__2-2--1" checked required>
+                <label for="vrstaproizvoda-0" class="form__section--2__label label__2-2--1">Sve vrste</label>
+
+                <input type="radio" name="vrstaproizvoda" value="1" id="vrstaproizvoda-1" class="form__section--2__input input__2-2--2" required>
+                <label for="vrstaproizvoda-1" class="form__section--2__label label__2-2--2">Gotovi proizvodi</label>
+            </div>
+
+            <!-- -----------KOOPERANTI------------- -->
+            <div class="form__section--2-3">
+                <input type="radio" name="kooperanti" value="0" id="kooperanti-0" class="form__section--2__input input__2-3--1" checked required>
+                <label for="kooperanti-0" class="form__section--2__label label__2-3--1">Svi part.</label>
+
+                <input type="radio" name="kooperanti" value="1" id="kooperanti-1" class="form__section--2__input input__2-3--2" required>
+                <label for="kooperanti-1" class="form__section--2__label label__2-3--2">Svi koop.</label>
+
+                <input type="radio" name="kooperanti" value="2" id="kooperanti-2" class="form__section--2__input input__2-3--3" required>
+                <label for="kooperanti-2" class="form__section--2__label label__2-3--3">Bez koop.</label>
+            </div>
+        </div>
+
+        <!-- ===========FORM SECTION 3=========== -->
+        <div class="form__section--3">
+
+            <!-- -----------VRSTA ARTIKLA------------- -->
+            <div class="form__section--3-1">
+                <select name="vrstaartikla" id="vrstaartikla" class="form__section--3__input input__3-1" required>
+                        <option value="0" class="form__section--3__option option__3-1--1">-- SVE VRSTE</option>
+                </select>
+            </div>
+
+            <!-- -----------TERITORIJA------------- -->
+            <div class="form__section--3-2">
+                <select name="teritorija" id="teritorija" class="form__section--3__input input__3-2" required>
+                    <option value="0" class="form__section--3__option option__3-2--1">-- SVE TERITORIJE</option>
+                    <option value="0" class="form__section--3__option option__3-2--2">BEOGRAD</option>
+                    <option value="0" class="form__section--3__option option__3-2--3">ISTOC.SRBIJA - JUZNI BANAT</option>
+                    <option value="0" class="form__section--3__option option__3-2--4">BACKA I SEVER BANATA</option>
+                    <option value="0" class="form__section--3__option option__3-2--5">CENTRALNA SRBIJA</option>
+                    <option value="0" class="form__section--3__option option__3-2--6">ZAPADNA SRBIJA I SREM</option>
+                    <option value="0" class="form__section--3__option option__3-2--7">JUZNA SRBIJA</option>
+                    <option value="0" class="form__section--3__option option__3-2--8">INOSTRANSTVO</option>
+                </select>
+            </div>
+
+            <!-- -----------KOMERCIJALISTA------------- -->
+            <div class="form__section--3-3">
+                <select name="komercijalista" id="komercijalista" class="form__section--3__input input__3-3" required>
+                    <option value="0" class="form__section--3__option option__3-3--1">-- SVI KOMERCIJALISTI</option>
+                    <option value="0" class="form__section--3__option option__3-3--2">MARKO VOJNOVIC</option>
+                </select>
+            </div>
+
+            <!-- -----------ORGANIZACIONA JEDINICA------------- -->
+            <div class="form__section--3-4">
+                <select name="organizacionajedinica" id="organizacionajedinica" class="form__section--3__input input__3-4" required>
+                    <option value="0" class="form__section--3__option option__3-4--1">00000 - BET</option>
+                    <option value="0" class="form__section--3__option option__3-4--2">99 - BEOGRAD</option>
+                    <option value="0" class="form__section--3__option option__3-4--3">13200 - BEOGRAD</option>
+                    <option value="0" class="form__section--3__option option__3-4--4">57000 - BEOGRAD</option>
+                </select>
+            </div>
+
+        </div>
+
+        <!-- ===========FORM SECTION 4=========== -->
+        <div class="form__section--4">
+
+            <!-- -----------PIB/MI------------- -->
+            <input type="radio" name="vrstaizvestaja" value="0" id="vrstaizvestaja-0" class="form__section--4__input input__4--1" required>
+            <label for="vrstaizvestaja-0" class="form__section--4__label label__4--1">MI</label>
+
+            <input type="radio" name="vrstaizvestaja" value="1" id="vrstaizvestaja-1" class="form__section--4__input input__4--2" checked required>
+            <label for="vrstaizvestaja-1" class="form__section--4__label label__4--2">PIB</label>
+
+        </div>
+    </div>
+
+</form>
+    <div class="search-input-container">
+        <input type="text" id="search-input">
+    </div>
+</div>
+
+<!-- -----------BUTTON------------- -->
+<input type="submit" form="form" id="submit-btn">
+
+<div class="result">
+    <table class="" id="table" border="1">
+        <thead>
+            <th class="thead">SIFRA</th>
+            <th class="thead">NAZIV</th>
+            <th class="thead">KOLICINA</th>
+            <th class="thead">KOLICINA(koeficijent)</th>
+            <th class="thead">PP CENA</th>
+            <th class="thead">PRODAJNA VREDNOST</th>
+            <th class="thead">RABAT</th>
+            <th class="thead">RABAT %</th>
+            <th class="thead">RABAT AKCIJA</th>
+            <th class="thead">NETO VREDNOST</th>
+            <th class="thead">PDV</th>
+            <th class="thead">IZVOZ</th>
+            <th class="thead">KUPAC</th>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+
+<div class="loader-container">
+    <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+</div>
+
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+<% include partials/footer %>
