@@ -22,7 +22,8 @@ const loaderElement = document.querySelector('.lds-spinner');
 getInitialFormQueries();
 
 function getInitialFormQueries() {
-    fetch('http://localhost:5000/api/izvestaj')
+    //fetch('http://localhost:5000/api/izvestaj')
+    fetch('http://https://evening-lake-40421.herokuapp.com/api/izvestaj')
     .then(data => data.json())
     .then(data => {
 
@@ -110,7 +111,8 @@ function getInitialFormQueries() {
     let komercijalista = komercijalistaElement.value;
     let organizacionajedinica = orgJedinicaElement.value;
 
-    fetch('http://localhost:5000/api/izvestaj', {
+    //fetch('http://localhost:5000/api/izvestaj', {
+    fetch('https://evening-lake-40421.herokuapp.com/api/izvestaj', {
         method: 'POST',
         headers : {'Content-Type': 'application/json'},
         body:JSON.stringify({
