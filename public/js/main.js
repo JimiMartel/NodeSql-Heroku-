@@ -114,7 +114,8 @@ function getInitialFormQueries() {
     //fetch('http://localhost:5000/api/izvestaj', {
     fetch('https://salty-fortress-41969.herokuapp.com/api/izvestaj', {
         method: 'POST',
-        headers : {'Content-Type': 'application/json'},
+        headers : {'Content-Type': 'application/json',
+                    'Accept': 'application/json'},
         body:JSON.stringify({
                             datumod:datumod,
                             datumdo:datumdo,
