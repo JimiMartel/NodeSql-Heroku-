@@ -23,7 +23,7 @@ getInitialFormQueries();
 
 function getInitialFormQueries() {
     //fetch('http://localhost:5000/api/izvestaj')
-    fetch('http://https://evening-lake-40421.herokuapp.com/api/izvestaj')
+    fetch('https://evening-lake-40421.herokuapp.com/api/izvestaj')
     .then(data => data.json())
     .then(data => {
 
