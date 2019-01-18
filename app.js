@@ -10,19 +10,11 @@ app.use(express.static(__dirname + '/public'));
 
 //AMAZON SERVER
 const config = {
-    user: 'iadmin123',
-    password: 'admin123',
-    server: 'mytestdb01.cuglot9utjln.us-east-1.rds.amazonaws.com',
-    database: 'RestoredIMP2018a'
+    user: env.USER,
+    password: env.PASSWORD,
+    server: env.SERVER,
+    database: env.DATABASE
 };
-
-// LOCAL SERVER
-// var config = {
-//     user: 'sa',
-//     password: 'sa',
-//     server: 'DESKTOP-14C7PMG\\SQLEXPRESS', 
-//     database: 'IMP2018',
-// };
 
 //HOME 
 app.get('/', function(req, res) {
@@ -157,7 +149,3 @@ app.post('/api/izvestaj', async function (req, res) {
 app.listen(process.env.PORT, function(){
     console.log("YelpCamp Server Has Started!");
 });
-
-// const server = app.listen(5000, function () {
-//     console.log('The app is running!');
-// });
