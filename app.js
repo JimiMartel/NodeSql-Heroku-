@@ -154,8 +154,10 @@ app.post('/api/izvestaj', async function (req, res) {
     }
 });
 
-
-
-const server = app.listen(5000, function () {
-    console.log('The app is running!');
+app.listen(process.env.PORT, function(){
+    console.log("YelpCamp Server Has Started!");
 });
+
+// const server = app.listen(5000, function () {
+//     console.log('The app is running!');
+// });
