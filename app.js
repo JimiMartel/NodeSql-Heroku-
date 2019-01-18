@@ -10,10 +10,10 @@ app.use(express.static(__dirname + '/public'));
 
 //AMAZON SERVER
 const config = {
-    user: env.USER,
-    password: env.PASSWORD,
-    server: env.SERVER,
-    database: env.DATABASE
+    user: process.env.USER,
+    password: process.env.PASSWORD,
+    server: process.env.SERVER,
+    database: process.env.DATABASE
 };
 
 //HOME 
